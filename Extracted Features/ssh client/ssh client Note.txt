@@ -1,0 +1,25 @@
+05/07/23
+0. nano job.sh
+1. partition defines "nodes" (sinfo to check different ones)
+2. squeue -u il22158
+3. later work: bedtools-intersect
+
+08/07/23
+4. cd /user/work/il22158
+5. sinfo -o"%N, %P, %a, %m, %l, %G, %c, %z"
+6. sinfo -Nel
+
+09/07/23
+*bedtool intersect: add phastCons/Phylop features to the orginal file
+and save a new file? (Tutorial: chainning)
+-Done
+Bus error: out of memory
+1. 
+sacct -j 832679 --format=jobid,jobname,reqcpus,reqmem,averss,maxrss,elapsed,state%20,exitcode --unit=M
+
+12/07/23
+1. du -h /user/home/il22158
+2. du -h /user/work/il22158
+3. module load apps/bedtools/2.30.0
+4. module load apps/bedops/2.4.38
+5. module keyword bed

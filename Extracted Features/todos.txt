@@ -1,0 +1,9 @@
+1. extract text/(convert)numbers for all interested columns
+->so that the missing values will appear as NaN
+2. Finalizing the dataset by 
+1) extract mean for popFs (seems making no difference but 
+just to ensure all searched results are considered)
+2) one-hot-encoding AA, Codons and FLAGS;
+3) and delete duplicates
+3. Check the transferred dataset (should have 335 rows) and pick suitable
+imputation method

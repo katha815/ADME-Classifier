@@ -1,0 +1,18 @@
+1. phastCons
+http://www.genome.ucsc.edu/goldenPath/help/phastCons.html
+https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=cons46way
+
+2. phyloP
+https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=cons46way
+
+3. Ensembl - see xlsx
+Codons:
+Codons are sequences of three nucleotide bases (A, C, G, and U) that are present in messenger RNA (mRNA). They are part of the genetic code and specify the instructions for the synthesis of proteins. Each codon represents a specific amino acid or a control signal (such as start or stop signals). There are 64 possible codons, including three stop codons (UAA, UAG, and UGA) that signal the termination of protein synthesis. The genetic code is degenerate, meaning that multiple codons can code for the same amino acid. For example, the amino acid leucine can be specified by six different codons (UUA, UUG, CUU, CUC, CUA, and CUG).
+Amino Acids:
+Amino acids are organic compounds that serve as the building blocks of proteins. They are linked together through peptide bonds to form polypeptide chains, which fold and interact to create functional proteins. There are 20 standard amino acids commonly found in proteins, each with a unique side chain (R group) attached to a central carbon atom. The sequence of amino acids in a protein determines its primary structure and plays a crucial role in determining its three-dimensional structure and function.
+The relationship between codons and amino acids is mediated by the genetic code. Each codon codes for a specific amino acid, except for the stop codons that signal the end of protein synthesis. During translation, transfer RNA (tRNA) molecules with anticodons complementary to the codons on mRNA bring the corresponding amino acids to the ribosome. The ribosome reads the codons in mRNA and assembles the amino acids in the correct sequence to form a polypeptide chain.
+In summary, codons are three-nucleotide sequences in mRNA that represent specific amino acids or control signals, while amino acids are the individual building blocks that make up proteins. The codons in mRNA are decoded during translation to determine the sequence of amino acids in a protein.
+
+4. 1000G - see saved pdf
+
+5. gnom (?)
