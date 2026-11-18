@@ -64,11 +64,16 @@ Probability thresholding
 
 ## Models Tried
 
-| Model | Notes |
-|-------|-------|
-| **SGDClassifier** | Linear baseline; trained per LOCO fold and with K-fold CV |
-| **XGBClassifier** | Default hyperparameters; Bayesian optimisation (scikit-optimize `BayesSearchCV`); `approx` tree method variant |
-| **GradientBoostingClassifier** | Default hyperparameters; Bayesian optimisation |
+The notebook evaluates **six model/configuration variants** across three estimator families:
+
+| # | Model / configuration | Notes |
+|---|-----------------------|-------|
+| 1 | **SGDClassifier** | Linear baseline; trained per LOCO fold and with K-fold CV |
+| 2 | **XGBClassifier (default)** | Default hyperparameters |
+| 3 | **XGBClassifier (Bayesian-optimised)** | Hyperparameter search with scikit-optimize `BayesSearchCV` |
+| 4 | **XGBClassifier (`approx` tree method)** | XGBoost using the approximate tree-building method |
+| 5 | **GradientBoostingClassifier (default)** | Default hyperparameters |
+| 6 | **GradientBoostingClassifier (Bayesian-optimised)** | Hyperparameter search with scikit-optimize `BayesSearchCV` |
 
 ---
 
@@ -113,10 +118,10 @@ ADME-Classifier/
 ├── Baseline_XGBoost_Model_LeaveOneChrom_OtherTesting.ipynb
 ├── XGBoost_Pars_Optimised_for_4_training_feature_groups.ipynb
 ├── *_Features_Extraction*.ipynb       # Feature extraction pipelines
-├── Dataset_Expansion*.ipynb           # Dataset expansion experiments
-├── Extracted Features/                # Pre-extracted feature files
-├── dataS/                             # Supporting data directory
-└── thresholding results (graphs)/     # Saved threshold sweep plots
+├── Dataset_Expansion*.ipynb            # Dataset expansion experiments
+├── Extracted Features/                 # Pre-extracted feature files
+├── dataS/                              # Supporting data directory
+└── thresholding results (graphs)/      # Saved threshold sweep plots
 ```
 
 ---
