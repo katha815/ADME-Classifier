@@ -49,10 +49,13 @@ Chromosome-based split preparation
 StandardScaler normalisation
     │
     ▼
-Model training & evaluation
-  ├─ SGDClassifier  (linear baseline)
-  ├─ XGBClassifier  (default + Bayesian hyperparameter search)
-  └─ GradientBoostingClassifier
+Train and evaluate six model categories
+  ├─ xg   XGBoost (XGBClassifier)
+  ├─ gb   Gradient Boosting (GradientBoostingClassifier)
+  ├─ lr   Linear model (SGDClassifier)
+  ├─ kn   K-Nearest Neighbors (KNeighborsClassifier)
+  ├─ svm  Support Vector Machine (SVC)
+  └─ baye Bayesian classifier (GaussianNB)
     │
     ▼
 Probability thresholding
@@ -64,16 +67,16 @@ Probability thresholding
 
 ## Models Tried
 
-The notebook evaluates **six model/configuration variants** across three estimator families:
+The notebook evaluates these **six model categories**; hyperparameter searches and other variants are experiments within a category, not additional model categories:
 
-| # | Model / configuration | Notes |
-|---|-----------------------|-------|
-| 1 | **SGDClassifier** | Linear baseline; trained per LOCO fold and with K-fold CV |
-| 2 | **XGBClassifier (default)** | Default hyperparameters |
-| 3 | **XGBClassifier (Bayesian-optimised)** | Hyperparameter search with scikit-optimize `BayesSearchCV` |
-| 4 | **XGBClassifier (`approx` tree method)** | XGBoost using the approximate tree-building method |
-| 5 | **GradientBoostingClassifier (default)** | Default hyperparameters |
-| 6 | **GradientBoostingClassifier (Bayesian-optimised)** | Hyperparameter search with scikit-optimize `BayesSearchCV` |
+| Category | Model | Classifier |
+|----------|-------|------------|
+| **xg** | XGBoost | `XGBClassifier` |
+| **gb** | Gradient Boosting | `GradientBoostingClassifier` |
+| **lr** | Linear model | `SGDClassifier` |
+| **kn** | K-Nearest Neighbors | `KNeighborsClassifier` |
+| **svm** | Support Vector Machine | `SVC` |
+| **baye** | Bayesian classifier | `GaussianNB` |
 
 ---
 
